@@ -60,6 +60,5 @@ connection.connect(function(err) {
           return choiceArray; 
         }
       });
-
     }
-  }
+    };
