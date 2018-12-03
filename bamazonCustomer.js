@@ -4,7 +4,7 @@ var mysql = require("mysql");
 var inquirer = require("inquirer");
 
 
-// Initializes the connection variable to sync with a MySQL database. This is the code that has the actual connection take place. The mysql package is what allows me to connect to the actual database. 
+// Initializes the connection variable to sync with a MySQL database. This is the code that has the actual connection take place. The mysql package is what allows me to connect to the actual database. Setting up the paramenters for the connection. It is not actually where the conncection takes place. 
 var connection = mysql.createConnection({
   host: "localhost",
 
@@ -36,7 +36,7 @@ function loadProducts() {
     // Draw the table in the terminal using the response. If there is not an error (err) throw an error... above... below is if no error console the result... (res)
     console.table(res);
 
-    // Then prompt the customer for their choice of product, pass all the products to promptCustomerForItem. After the table loads the code below is envoking the function "promptCustomerForItem". 
+    // Then prompt the customer for their choice of product, pass all the products to promptCustomerForItem. After the table loads the code below is invoking the function "promptCustomerForItem". 
     promptCustomerForItem(res);
   });
 }
